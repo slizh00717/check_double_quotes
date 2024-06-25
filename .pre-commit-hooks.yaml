@@ -1,6 +1,6 @@
       - id: check-double-quotes
         name: Check double quotes in YAML configmap section
-        entry: python3 check_double_quotes.py
+        entry: check-double-quotes
         language: python
         files: '^.*\.ya?ml$'
         types: [file]
