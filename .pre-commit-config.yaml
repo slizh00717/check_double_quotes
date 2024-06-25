@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-double-quotes
+        name: Check double quotes in YAML configmap section
+        entry: python3 check_double_quotes.py
+        language: system
+        files: '^.*\.ya?ml$'
+        types: [file]
